@@ -1,0 +1,59 @@
+.realignment-item {
+    padding: 1rem;
+    display: flex;
+    align-items: center; /* 세로 가운데 정렬 */
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+    box-sizing: border-box;
+  }
+  
+  .realignment-item:hover {
+    background: #e3fafc;
+  }
+
+  /* todo-item 사이에 윗 테두리 */
+  .realignment-item + .realignment-item {
+    border-top: 1px solid #f1f3f5;
+  }
+    
+  .realignment-item.r_checked{
+    border:2px solid #84d335;
+  }
+  .realignment-text {
+    flex: 1; /* 체크, 엑스를 제외한 공간 다 채우기 */
+    word-break: break-all;
+  }
+
+  .realignment-text.color1{
+    color:#343a40;
+  }
+  .realignment-text.color2{
+    color:#f03e3e;
+  }
+  .realignment-text.color3{
+    color:#12b886;
+  }
+  .realignment-text.color4{
+    color:#228ae6;
+  }
+
+  .realignment-text.checked {
+    text-decoration: line-through;
+    color: #adb5bd;
+  }
+  .realignment-text.bold-font {
+    font-weight: bold;
+  }
+  
+  .realignment-btn{
+      display: flex;
+      margin-right:1rem;
+      opacity:.1;
+  }
+  .realignment-btn.r_checked{
+    color:#84d335;
+  }
+  .r_checked .realignment-btn{
+      opacity:1;
+  }

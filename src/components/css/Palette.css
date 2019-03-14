@@ -1,0 +1,48 @@
+.palette {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .palette>span{
+    height: 24px;
+  }
+  
+  .color {
+    opacity: 0.3;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .palette-color1{
+    color:#343a40;
+  }
+  .palette-color2{
+    color:#f03e3e;
+  }
+  .palette-color3{
+    color:#12b886;
+  }
+  .palette-color4{
+    color:#228ae6;
+  }
+  
+  .color:hover {
+    opacity: 1;
+  }
+  
+  .color.active, .color:active {
+    opacity: 1;
+  }
+  
+  .color + .color {
+    margin-left: .2rem;
+  }
+
+  .make-bold{
+    display:flex;
+    margin-left:.8rem;
+    cursor:pointer;
+  }
+  .make-bold>img{
+    width:100%;
+  }
